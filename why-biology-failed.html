@@ -246,5 +246,25 @@ Only by identifying the rules that govern biological systems can biology move fr
 © 2026 — Rule-Based Biology
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  if (window.innerWidth <= 768) {
+
+    const toggles = document.querySelectorAll(".dropdown-toggle");
+
+    toggles.forEach(toggle => {
+      toggle.addEventListener("click", function (e) {
+        e.preventDefault();
+        const parent = this.parentElement;
+        parent.classList.toggle("open");
+      });
+    });
+
+  }
+
+});
+</script>
+    
 </body>
 </html>
