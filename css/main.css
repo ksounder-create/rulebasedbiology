@@ -158,6 +158,14 @@ nav {
     display: block;
 }
 
+/* Mark dropdown parents */
+
+.dropdown > .dropdown-toggle::after {
+    content: " ▾";
+    font-size: 0.75em;
+    color: var(--muted);
+}
+
 /* ================================
    MOBILE NAVIGATION
    ================================ */
